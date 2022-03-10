@@ -76,6 +76,7 @@ ul{
     background-color: var(--search);
     border: none;
     z-index: 10;
+    padding: 12px 12px;
 }
 .head-search i{
     position: relative;
