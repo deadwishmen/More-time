@@ -7,57 +7,1897 @@
     <title>Document</title>
     <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./jquery-3.6.0.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="grid"> 
-            <div class="head">
-                <div class="head-icon">
-                    <img src="https://kt.city/static/ktcity-logo.png" alt="">
-                </div>
-                <div class="head-search">
-                    <input type="text" class="search-input" placeholder="Search">
-                    <i class="fa-solid fa-magnifying-glass find"></i>
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li class="nav-item">
-                            <a href="#">    
-                                <p>Khích hoạt mã</p>
-                            </a>
-                        </li>
-                        <li class="nav-item head-discover" >
-                            <a href="#">
-                                <div class="head-discover_img">
-                                    <img src="https://kt.city/static/img-menu-square.png" alt="">
+    <div class="content">
+       <div class="content-index">
+        <div class="header">
+            <div class="grid"> 
+                <div class="head">
+                    <div class="head-icon">
+                        <img src="https://kt.city/static/ktcity-logo.png" alt="background-image">
+                    </div>
+                    <div class="head-search">
+                        <input type="text" placeholder="Search" class="search-input">
+                        <div class="find">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li class="nav-item">
+                                <a href="#" id="liveAlertBtn">    
+                                    Khích hoạt mã
+                                </a>
+                            </li>
+                            <li class="nav-item head-discover" >
+                                <a href="#" id="liveAlertBtn1">
+                                    <div class="head-discover_img" style="margin-right: -10px;">
+                                        <img src="https://kt.city/static/img-menu-square.png" alt="">
+                                    </div>
+                                    <div class="head-discover_conten">
+                                        <span>Khám phá</span>
+                                    </div>
+                                </a>
+                                    <ul class="list-discover">
+                                        <li>
+                                            <div class="list-1" id="liveAlertBtn2"><a href="#"><i class="fa-solid fa-bars"></i>
+                                                Danh mục</a></div></li>
+                                        <li>
+                                            <div class="list-2" id="liveAlertBtn3"><a href="#" ><i class="fa-solid fa-clock-rotate-left"></i>
+                                                Sắp ra mắt</a></div></li>
+                                        <li ><div class="list-3" id="liveAlertBtn4"><a href="#" ><i class="fa-solid fa-fire-flame-curved"></i>
+                                            Trending</a></div></li>
+                                    </ul>
+                            </li>
+                            <li class="nav-item head-support">
+                               <a href="#" id="liveAlertBtn5">
+                                   Hỗ trợ
+                               </a>
+                            </li>
+                            <li class="nav-item head-login">
+                                <div class="head-login_conten" id="liveAlertBtn6">
+                                    <a style="color: #2979ff;" href="#">Đăng nhập</a>
                                 </div>
-                                <div class="head-discover_conten">
-                                    <p>Khám phá</p>
-                                </div>
-                                
-                            </a>
-                        </li>
-                        <li class="nav-item head-support">
-                           <a href="#">
-                               Hỗ trợ
-                           </a>
-                        </li>
-                        <li class="nav-item head-login">
-                            <div class="head-login_conten">
-                                <a href="">Đăng nhập</a>
-                            </div>
-                        </li>
-                        <li class="nav-item head-avatar">
-                            <img src="https://kt.city/static/avatar/avatar5.jpg" alt="avatar">
-                        </li>
-                        <li class="nav-item head-shopping">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="nav-item head-avatar" id="liveAlertBtn7">
+                                <img src="https://kt.city/static/avatar/avatar5.jpg" alt="avatar">
+                            </li>
+                            <li class="nav-item head-shopping" id="liveAlertBtn8" style="cursor: pointer;">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="alert alert-success alert-dismissible" role="alert"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>Hệ thống sẽ thông báo ở đây mọi người chú ý nhé!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
+        <div id="liveAlertPlaceholder"></div>
+        <div class="body">
+            <div class="hero">
+                <div class="content-hero">
+                    <div class="online">
+                        <div class="content-online">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="text-hero">889 đang học</span>
+                        </div>
+                    </div>
+                    <div class="hero-topic">
+                        <span>Tự học thiết kế website hiệu quả với khoá học HTML CSS cơ bản cho người mới</span>
+                    </div>
+                    <div class="author">
+                        <div class="content-author">
+                            Bởi: <span style="font-weight: bold;">EvonDev</span>
+                        </div>
+                        <div class="time"><span>Cập nhật 03/2022</span></div>
+                    </div>
+                    <div class="demo">
+                        <div class="screen-login">
+                            <div class="demo-screen">
+                                <div id="magnifying_area">
+                                    <img id="magnifying_img" src="https://static.kt.city/cjxtrhjqs00we098574enz0ng/khoa-hoc-html-css-by-evondev-1602565400491.jpg" alt="background-image" stt="0" class="pic">
+                                    <div class="screen-image__cover"></div>
+                                </div>
+                            </div>
+                            <div class="demo-list">
+                                <div class="list-item">
+                                    <img id="page1" src="https://static.kt.city/cjxtrhjqs00we098574enz0ng/khoa-hoc-html-css-by-evondev-1602565400491.jpg" alt class="list__image img-cover" loading="lazy">
+                                </div>
+                                <div class="list-item">
+                                    <img id="page2" src="https://static.kt.city/cjxtrhjqs00we098574enz0ng/sc1-1602566582612.jpg" alt class="list__image img-cover" loading="lazy">
+                                </div>
+                                <div class="list-item">
+                                    <img id="page3" src="https://static.kt.city/cjxtrhjqs00we098574enz0ng/sc2-1602566586642.jpg" alt class="list__image img-cover" loadding="lazy">
+                                </div>
+                                <div class="list-item">
+                                    <img id="page4" src="https://static.kt.city/cjxtrhjqs00we098574enz0ng/sc3-1602566591867.jpg" alt class="list__image img-cover" loading="lazy">
+                                </div>
+                                <div class="list-item">
+                                    <img id="page5" src="https://static.kt.city/cjxtrhjqs00we098574enz0ng/sc4-1602566597336.jpg" alt class="list__image img-cover" loading="lazy">
+                                </div>
+                                <div class="list-item">
+                                    <img id="page6" src="https://static.kt.city/cjxtrhjqs00we098574enz0ng/screenshotlast-1602639932856.jpg" alt class="list__image img-cover" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login">
+                            <div class="content-login">
+                                <div class="firstmoney">
+                                    <span>1,299,000đ
+                                    </span>
+                                </div>
+                                <div class="sellmoney">
+                                    <div class="money">
+                                        <span>899,000đ</span>
+                                    </div>
+                                    <div class="sell">
+                                        <span class="content-sell">Tiết kiệm 31%</span>
+                                    </div>
+                                </div>
+                                <input name="fullname" type="text" placeholder="Tên của bạn" class="form-input" autocomplete="off">
+                                <input name="gmail" type="text" placeholder="Email của bạn" class="form-input" autocomplete="off">
+                                <button class="registration" id="liveAlertBtn9">
+                                    Đăng kí học online
+                                </button>
+                                <div class="text-login">Hoặc đăng kí bằng</div>
+                                <div class="login-brand">
+                                    <button class="icon-facebook" id="liveAlertBtn10">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <span>Facebook</span>
+                                    </button>
+                                    <button class="icon-gg" id="liveAlertBtn11">
+                                        <i class="fa-brands fa-google"></i>
+                                        <span>Google</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="page-container">
+            <div class="quote">
+                <div class="quote-content">
+                    Với hơn 100 videos trong khoá học evondev sẽ dạy các bạn đi từ kiến thức cơ bản nhất cho đến nâng cao thông qua các videos kèm bài tập mỗi chương. Ngoài ra evondev còn chia sẻ thêm cho các bạn những kiến thức liên quan bổ sung như cách tư duy, định hướng, phân tích giao diện, cách dùng phần mềm code hiệu quả, cách cải thiện mắt thẩm mỹ UI UX...Từ đó các bạn có thể tự tay code các giao diện từ A-Z với kiến thức về HTML CSS đã học mà không cần phải dùng bất kỳ thư viện nào.
+                </div>
+                <div class="quote-author">
+                    <img src="https://static.kt.city/e0ebee87-aefb-40bf-96a3-9a53986dfc17.jpg" alt="" class="quote-author_avatar">
+                    <h3 class="quote-user"><strong>Evondev</strong></h3>
+                </div>
+            </div>
+        </div>
+        <div class="page-container">
+            <div class="tab-list">
+                <div class="tab-item tab-active" onclick="Showslide(0)">
+                    Nhận định mới
+                    <span class="tab-label">10</span>
+                </div>
+                <div class="tab-item" onclick="Showslide(1)">Nội dung học tập</div>
+                <div class="tab-item" onclick="Showslide(2)">Về tác giả</div>
+                <div class="tab-item" onclick="Showslide(3)">Q&A</div>
+            </div> 
+            <div class="content-tab-list">
+                <div class="comment-sst"  stt="0">
+                    <div class="avt-name">
+                        <img src="https://kt.city/static/avatar/avatar7.jpg" class="recommend-avatar" alt="Tiến Trần Minh">
+                        <span>Tiến Trần Minh</span>
+                        <div class="time-comment">
+                            Gần đây
+                        </div>
+                    </div>
+                    <div class="comment-tg">
+                        <p>Bài học rất dễ hiểu và hướng dẫn làm tốt, các clip học không quá dài, không gây sự chán trường khi học mà ngược lại gây cảm giác rất thích thú mà muốn học thêm.</p>
+                    </div>
+                    <hr style="color: var(--bs-gray-600)"/>
+                </div>
+                <div class="comment-sst"  stt="0">
+                    <div class="avt-name">
+                        <img src="https://kt.city/static/avatar/avatar11.jpg" class="recommend-avatar" alt="Tiến Trần Minh">
+                        <span>Hoàng Văn Nhật</span>
+                        <div class="time-comment">
+                            Gần đây
+                        </div>
+                    </div>
+                    <div class="comment-tg">
+                        <p>Bài giảng rất hay và bổ ích, mong các video cũng như vậy, đánh giá năm sao, luôn ủng hộ anh Evondev, em sẽ học nốt 3 khóa học còn lại nếu có thể</p>
+                    </div>
+                    <hr style="color: var(--bs-gray-600)"/>
+                </div>
+                <div class="comment-sst"  stt="0">
+                    <div class="avt-name">
+                        <img src="https://kt.city/static/avatar/avatar11.jpg" class="recommend-avatar" alt="Tiến Trần Minh">
+                        <span>Mai Đức Thiện</span>
+                        <div class="time-comment">
+                            Gần đây
+                        </div>
+                    </div>
+                    <div class="comment-tg">
+                        <p>Anh Evondev dạy rất hay, dễ hiểu, hỗ trợ những người mới học nhiệt tình qua telegram, khóa học đi từ cơ bản cho đến nâng cao có nhiều kiến thức bổ ích, chia nhỏ từng video giúp cho người học không bị chán nản.</p>
+                    </div>
+                    <hr style="color: var(--bs-gray-600)"/>
+                </div>
+                <div class="comment-sst" style="display: none;" >
+                    <div class="avt-name">
+                        <img src="https://kt.city/static/avatar/avatar7.jpg" class="recommend-avatar" alt="Trần Vũ Phương Uyên">
+                        <span>Trần Vũ Phương Uyên</span>
+                        <div class="time-comment">
+                            Gần đây
+                        </div>
+                    </div>
+                    <div class="comment-tg">
+                        <p>Nội dung tóm tắt nội dung cần học cụ thể dễ hiểu dễ nắm kiến thức, kiến thức trọng tâm, không lan man, thú vị</p>
+                    </div>
+                    <hr style="color: var(--bs-gray-600)"/>
+                </div>
+                <div class="comment-sst" style="display: none;">
+                    <div class="avt-name">
+                        <img src="https://kt.city/static/avatar/avatar6.jpg" class="recommend-avatar" alt="Ngọc">
+                        <span>Ngọc</span>
+                        <div class="time-comment">
+                            Gần đây
+                        </div>
+                    </div>
+                    <div class="comment-tg">
+                        <p>Mở đầu giúp dễ hình dung lộ trình học hơn cũng như giúp có cái nhìn tổng quan về những thứ mình sẽ học và đặt được mục tiêu để hoàn thành
+                        </p>
+                    </div>
+                    <hr style="color: var(--bs-gray-600)"/>
+                </div>
+                <div class="comment-sst" style="display: none;">
+                    <div class="avt-name">
+                        <img src="https://kt.city/static/avatar/avatar11.jpg" class="recommend-avatar" alt="Trần Văn Quang">
+                        <span>Trần Văn Quang</span>
+                        <div class="time-comment">
+                            Gần đây
+                        </div>
+                    </div>
+                    <div class="comment-tg" >
+                        <p>Anh Evondev dạy rất hay, dễ hiểu, hỗ trợ những người mới học nhiệt tình qua telegram, khóa học đi từ cơ bản cho đến nâng cao có nhiều kiến thức bổ ích, chia nhỏ từng video giúp cho người học không bị chán nản. Em luôn ủng hộ anh khi có những khóa học tiếp theo.</p>
+                    </div>
+                    <hr style="color: var(--bs-gray-600)"/>
+                </div>
+                <div class="comment-sst" style="display: none;">
+                    <div class="avt-name">
+                        <img src="https://kt.city/static/avatar/avatar4.jpg" class="recommend-avatar" alt="dinh quoc bao">
+                        <span>dinh quoc bao</span>
+                        <div class="time-comment">
+                            Gần đây
+                        </div>
+                    </div>
+                    <div class="comment-tg">
+                        <p>khóa học gồm nhiều clip ngắn với những kiến thức từ cơ bản nhất rất cần thiết cho người học đặc biệt các bạn học trái ngành, cung cấp các kiến thức căn bản đến nâng cao, xây dựng tư duy cũng như nền tảng cho người lập trình viên</p>
+                    </div>
+                    <hr style="color: var(--bs-gray-600)"/>
+                </div>
+                <div class="comment-sst" style="display: none;">
+                    <div class="avt-name">
+                        <img src="https://kt.city/static/avatar/avatar8.jpg" class="recommend-avatar" alt="Tài Thái Ta">
+                        <span>Tài Thái Ta</span>
+                        <div class="time-comment">
+                            Gần đây
+                        </div>
+                    </div>
+                    <div class="comment-tg">
+                        <p>khóa học ok,rất hiệu quả, cảm ơn KT giúp em có thêm nhiều kiến thức để có thể đi làm sau này.Em sẽ mua thêm những khóa học sau , để có thêm nhiều kiến thức nữa.</p>
+                    </div>
+                    <hr style="color: var(--bs-gray-600)"/>
+                </div>
+                <div class="comment-sst" style="display: none;">
+                    <div class="avt-name">
+                        <img src="https://kt.city/static/avatar/avatar11.jpg" class="recommend-avatar" alt="Duy Trương Hoàng">
+                        <span>Duy Trương Hoàng</span>
+                        <div class="time-comment">
+                            Gần đây
+                        </div>
+                    </div>
+                    <div class="comment-tg">
+                        <p>Anh Evondev dạy rất hay, dễ hiểu, hỗ trợ những người mới học nhiệt tình qua telegram, khóa học đi từ cơ bản cho đến nâng cao có nhiều kiến thức bổ ích, chia nhỏ từng video giúp cho người học không bị chán nản. Em luôn ủng hộ anh khi có những khóa học tiếp theo.</p>
+                    </div>
+                    <hr style="color: var(--bs-gray-600)"/>
+                </div>
+                <div class="comment-sst" style="display: none;">
+                    <div class="avt-name">
+                        <img src="https://kt.city/static/avatar/avatar12.jpg" class="recommend-avatar" alt="Hưng">
+                        <span>Hưng</span>
+                        <div class="time-comment">
+                            Gần đây
+                        </div>
+                    </div>
+                    <div class="comment-tg">
+                        <p>bài học giới thiệu lộ tình tỉ mỉ, hướng dẫn tận tình hết mình, hy vọng ad sẽ ra những bài học bổ ích
+                        </p>
+                    </div>
+                    <hr style="color: var(--bs-gray-600)"/>
+                </div>
+                <div class="text-center" id="click-button">
+                    <button class="recommend-more">
+                        Tải thêm nhận định khác 
+                    </button>
+                </div>
+            </div>
+            <div class="content-tab-list"  style="display: none;">
+                <div class="tab-study">
+                    <div class="topic-study">
+                        <h1 class="content-topic-study">Bạn sẽ nhận được</h1>
+                    </div>
+                    <div class="content-study">
+                        <div class="study-benefit__item">
+                            <div class="item-study">
+                                <i class="fa-solid fa-check" style="margin-top: 10px;"></i>
+                                <p class="text-study">Nắm vững chắc các kiến thức cơ bản về HTML, các thẻ trong HTML – HTML5, cách đặt tên theo chuẩn BEM, học cách sử dụng Class Id và các attributes khác của HTML một cách chỉn chu từ đầu</p>
+                            </div>
+                            <div class="item-study">
+                                <i class="fa-solid fa-check" style="margin-top: 10px;"></i>
+                                <p class="text-study">Học về tư duy, định hướng học, cách tự học tốt, cách luyện tập cho mau lên trình. Có nhóm hỗ trợ khi gặp khó khăn</p>
+                            </div>
+                            <div class="item-study">
+                                <i class="fa-solid fa-check" style="margin-top: 10px;"></i>
+                                <p class="text-study">Nắm vững kiến thức về dàn giao diện với Flexbox thông qua ví dụ thực tế</p>
+                            </div>
+                            <div class="item-study">
+                                <i class="fa-solid fa-check" style="margin-top: 10px;"></i>
+                                <p class="text-study">Học được cách phân tích thiết kế cho đến khi hoàn thiện giao diện</p>
+                            </div>
+                            <div class="item-study">
+                                <i class="fa-solid fa-check" style="margin-top: 10px;"></i>
+                                <p class="text-study">Sử dụng thẻ HTML đúng đắn, lúc nào dùng thẻ này lúc nào dùng thẻ kia</p>
+                            </div>
+                            <div class="item-study">
+                                <i class="fa-solid fa-check" style="margin-top: 10px;"></i>
+                                <p class="text-study">Hiểu về Responsive để xử lý giao diện ở nhiều loại màn hình một cách tốt nhất có thể</p>
+                            </div>
+                            <div class="item-study">
+                                <i class="fa-solid fa-check" style="margin-top: 10px;"></i>
+                                <p class="text-study">Học, tìm hiểu và sử dụng SASS toàn tập để viết function, mixins, sử dụng biến, lồng code để hỗ trợ cho việc code CSS một cách nhanh nhất</p>
+                            </div>
+                            <div class="item-study">
+                                <i class="fa-solid fa-check" style="margin-top: 10px;"></i>
+                                <p class="text-study">Biết thêm các công cụ, tiện ích, các trang web bổ ích hay hỗ trợ công việc một cách tốt nhất để nâng cao hiệu suất làm việc</p>
+                            </div>
+                            <div class="item-study">
+                                <i class="fa-solid fa-check" style="margin-top: 10px;"></i>
+                                <p class="text-study">Nắm vững CSS Selectors và Combinators để làm chủ các bộ chọn trong CSS</p>
+                            </div>
+                            <div class="item-study">
+                                <i class="fa-solid fa-check" style="margin-top: 10px;"></i>
+                                <p class="text-study">Và rất nhiều điều, kiến thức bổ ích khác đang chờ đợi các bạn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-study">
+                        <div class="topic-study">
+                            <h1 class="content-topic-study">Nội dung học tập</h1>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 1: Bắt đầu
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 1: Làm được gì sau khóa học?</span>
+                                    </div>
+                                    <div class="right-list">03:15
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 2: HTML, CSS là gì?</span>
+                                    </div>
+                                    <div class="right-list">02:29
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 3:Làm quen với Dev tools
+                                        </span>
+                                    </div>
+                                    <div class="right-list">03:55
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 4: Cài đặt môi trường
+                                        </span>
+                                    </div>
+                                    <div class="right-list">02:57
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-file-lines"></i>
+                                        <span>Bài 5: Lưu ý khi học lập trình tại F8
+                                        </span>
+                                    </div>
+                                    <div class="right-list">02:00
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 2: Làm quen với HTML
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 6: Cấu trúc file HTML
+                                        </span>
+                                    </div>
+                                    <div class="right-list">06:20
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-file-lines"></i>
+                                        <span>Bài 7. Làm quen với màn thử thách
+                                        </span>
+                                    </div>
+                                    <div class="right-list">01:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 8: Ví dụ cấu trúc file HTML
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 9: Comments trong HTML
+                                        </span>
+                                    </div>
+                                    <div class="right-list">02:12
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 10: Ví dụ comments trong HTML
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 11: Các thẻ HTML thông dụng
+
+                                        </span>
+                                    </div>
+                                    <div class="right-list">11:08
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 12. Ví dụ thẻ HTML thông dụng
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 13: Bài tập thẻ HTML thông dụng #1
+
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 14: Bài tập thẻ HTML thông dụng #2
+
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 15: Bài tập thẻ HTML thông dụng #3
+
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 16. Attribute trong HTML là gì?
+                                        </span>
+                                    </div>
+                                    <div class="right-list">01:54
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 17: Bài tập sử dụng Attribute #1
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 18: Cách quản lý thư mục dự án
+                                        </span>
+                                    </div>
+                                    <div class="right-list">11:50
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 3: Làm quen với CSS
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 19: Sử dụng CSS trong HTML
+                                        </span>
+                                    </div>
+                                    <div class="right-list">07:13
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 20: Thực hành sử dụng CSS internal
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 21: ID và Class
+                                        </span>
+                                    </div>
+                                    <div class="right-list">04:18
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 22: Thực hành sử dụng CSS external
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-file-lines"></i>
+
+                                        <span>Bài 23: CSS selectors cơ bản
+                                        </span>
+                                    </div>
+                                    <div class="right-list">04:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 24: Ví dụ sử dụng CSS selectors cơ bản
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 25: Thực hành CSS selectors #1
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 26: Độ ưu tiên trong CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">10:31
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 27: Thực hành độ ưu tiên trong CSS #1
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 28: Sử dụng biến trong CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">03:48
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 29: Vấn đề khi không sử dụng biến CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 30: Giải quyết vấn đề với biến CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 31: Các đơn vị trong CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">10:56
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 32: Ví dụ sử dụng đơn vị % #1
+
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 33: Reset margin được đặt mặc định
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 34: Thực hành reset CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 35: Ví dụ sử dụng đơn vị % #2
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 36: Ví dụ sử dụng đơn vị rem #1
+
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 37: Vấn đề khi sử dụng px cho font-size
+
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 38: Ưu điểm khi sử dụng rem cho font-size
+
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 39: Một số hàm trong CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">06:14
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 40: Thực hành dùng hàm var()
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 41. Thực hành dùng hàm rgba()
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 42: Pseudo classes trong CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">03:43
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 43: Thực hành sử dụng :hover
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 44: Pseudo elements trong CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">06:15
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 4: Đệm, viền và khoảng lề
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 45: Thuộc tính padding (đệm)
+                                        </span>
+                                    </div>
+                                    <div class="right-list">06:20
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 46: Thực hành sử dụng padding #1
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 47: Thực hành sử dụng padding #2
+                                        </span>
+                                    </div>
+                                    <div class="right-list">03:55
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 48: Thuộc tính border (đường viền)
+
+                                        </span>
+                                    </div>
+                                    <div class="right-list">06:06
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 49: Thực hành sử dụng border #1
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 50: Thuộc tính margin (khoảng cách lề)
+                                        </span>
+                                    </div>
+                                    <div class="right-list">05:31
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <span>Bài 51: Thực hành sử dụng margin #1
+                                        </span>
+                                    </div>
+                                    <div class="right-list">00:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 52: Thuộc tính box-sizing
+                                        </span>
+                                    </div>
+                                    <div class="right-list">05:12
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 5: Thuộc tính tạo nền
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 53: Thuộc tính background-image
+                                        </span>
+                                    </div>
+                                    <div class="right-list">12:47
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 54: Thuộc tính background-size với cover, contain                                        </span>
+                                    </div>
+                                    <div class="right-list">03:17
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 55: Thuộc tính background-origin
+                                        </span>
+                                    </div>
+                                    <div class="right-list">02:58
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 56: Thuộc tính background-position
+                                        </span>
+                                    </div>
+                                    <div class="right-list">04:15
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 57: Cú pháp "shorthand" cho background
+                                        </span>
+                                    </div>
+                                    <div class="right-list">02:30
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 6: Thuộc tính vị trí
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 58: CSS position relative
+                                        </span>
+                                    </div>
+                                    <div class="right-list">03:04
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 59: CSS position absolute                                        </span>
+                                    </div>
+                                    <div class="right-list">07:58
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 60: CSS position fixed
+                                        </span>
+                                    </div>
+                                    <div class="right-list">03:29
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 61: CSS position sticky
+                                        </span>
+                                    </div>
+                                    <div class="right-list">03:18
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 7: Một số tricks và tips
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 62: Các cách căn giữa trong CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">16:54
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 63. Hiển thị ảnh dự phòng khi ảnh chính lỗi                                        </span>
+                                    </div>
+                                    <div class="right-list">06:26
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 8: Xây dựng Wed The band
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 64: Giới thiệu dự án                                        </span>
+                                    </div>
+                                    <div class="right-list">02:53
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 65: Phân biệt & gọi tên các thành phần                                        </span>
+                                    </div>
+                                    <div class="right-list">16:15
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 66: Phân tích dự án
+                                        </span>
+                                    </div>
+                                    <div class="right-list">07:32
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 67: Tạo project base
+                                        </span>
+                                    </div>
+                                    <div class="right-list">02:57
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 68: Header CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">33:50
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 69: Navigation CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">28:46
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 70: Header search CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">20:11
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 71: Header fixed CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">07:19
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 72: Slider CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">27:21
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 73: About section CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">17:47
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 74: Team section CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">14:07
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 75: Tour tickets CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">19:27
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 76: Tour places CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">24:10
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 77: Buy tickets modal
+                                        </span>
+                                    </div>
+                                    <div class="right-list">43:07
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 78: Buy tickets modal Javascript logic
+                                        </span>
+                                    </div>
+                                    <div class="right-list">27:49
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 79: Row - columns layout
+                                        </span>
+                                    </div>
+                                    <div class="right-list">15:26
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 80: Contact form CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">24:14
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 81: Map, footer CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">15:09
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 82: Review
+                                        </span>
+                                    </div>
+                                    <div class="right-list">06:23
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 10: Dựng bố cục wed với Flexbox
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 94: Giới thiệu Flexbox
+                                        </span>
+                                    </div>
+                                    <div class="right-list">05:57
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 95: Thuộc tính CSS trong Flexbox                                        </span>
+                                    </div>
+                                    <div class="right-list">06:26
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 96: Học Flexbox qua ví dụ
+                                        </span>
+                                    </div>
+                                    <div class="right-list">35:04
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 97: Để học Flexbox tốt hơn bạn nên xem video này
+                                        </span>
+                                    </div>
+                                    <div class="right-list">14:23
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 11: Quy ước đặt tên class BEM
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 98: BEM là gì?
+                                        </span>
+                                    </div>
+                                    <div class="right-list">14:50
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 99: Thực hành BEM - Level 1                                        </span>
+                                    </div>
+                                    <div class="right-list">16:14
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 100: Bài thực hành Level 2
+                                        </span>
+                                    </div>
+                                    <div class="right-list">35:49
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 101: Đặt tên class khi Block lồng nhau
+                                        </span>
+                                    </div>
+                                    <div class="right-list">10:43
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 12: Xây dựng wed Shoppe
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 102: Dựng base source
+                                        </span>
+                                    </div>
+                                    <div class="right-list">02:54
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 103: Reset CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">05:03
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 104: Dựng base CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">10:14
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 105: Dựng khung web
+                                        </span>
+                                    </div>
+                                    <div class="right-list">11:12
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 106: Navbar CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">23:50
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 107: Nhúng Font-Icons
+                                        </span>
+                                    </div>
+                                    <div class="right-list">09:38
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 108: Icons CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">08:21
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 109: Header QR code CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">33:07
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 110: Header notification CSS - Phần 1
+                                        </span>
+                                    </div>
+                                    <div class="right-list">38:28
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 111: Header notification CSS - Phần 2
+                                        </span>
+                                    </div>
+                                    <div class="right-list">19:05
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 112: Header notification CSS - Phần 3
+                                        </span>
+                                    </div>
+                                    <div class="right-list">13:16
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 113: Header notification CSS - Phần 4
+                                        </span>
+                                    </div>
+                                    <div class="right-list">04:29
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 114: Base modal
+                                        </span>
+                                    </div>
+                                    <div class="right-list">12:13
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 115: Dựng khung form đăng ký
+
+                                        </span>
+                                    </div>
+                                    <div class="right-list">16:42
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 116: CSS form đăng ký
+                                        </span>
+                                    </div>
+                                    <div class="right-list">26:59
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 117: CSS form đăng ký - Phần 2
+                                        </span>
+                                    </div>
+                                    <div class="right-list">26:14
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 118: CSS form đăng nhập
+                                        </span>
+                                    </div>
+                                    <div class="right-list">16:00
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 119: Modal animation
+                                        </span>
+                                    </div>
+                                    <div class="right-list">06:15
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 120. Dựng khung phần tìm kiếm
+                                        </span>
+                                    </div>
+                                    <div class="right-list">19:53
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 121: Header tìm kiếm CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">40:03
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 122: Lịch sử tìm kiếm CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">23:46
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 123: Header giỏ hàng trống CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">25:55
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 124: Header cart badge
+                                        </span>
+                                    </div>
+                                    <div class="right-list">10:46
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 125: Header cart - List products
+                                        </span>
+                                    </div>
+                                    <div class="right-list">35:19
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 126: Header user info
+                                        </span>
+                                    </div>
+                                    <div class="right-list">28:05
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 127: Header fix UI bugs
+                                        </span>
+                                    </div>
+                                    <div class="right-list">16:40
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 128: Danh mục: Dựng khung
+                                        </span>
+                                    </div>
+                                    <div class="right-list">14:53
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 129: Danh mục: Base responsive
+                                        </span>
+                                    </div>
+                                    <div class="right-list">10:53
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 130: Danh mục CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">21:49
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 131: Dựng khung: Sắp xếp sản phẩm
+                                        </span>
+                                    </div>
+                                    <div class="right-list">11:03
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 132: CSS: Sắp xếp sản phẩm
+                                        </span>
+                                    </div>
+                                    <div class="right-list">28:24
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 133: Dựng khung sản phẩm
+                                        </span>
+                                    </div>
+                                    <div class="right-list">18:12
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 134: Sản phẩm CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">25:26
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 135: Sản phẩm CSS - Phần 2
+                                        </span>
+                                    </div>
+                                    <div class="right-list">18:42
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 136: Sản phẩm CSS - Phần 3
+                                        </span>
+                                    </div>
+                                    <div class="right-list">13:40
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 137: Sản phẩm: CSS nhãn yêu thích
+                                        </span>
+                                    </div>
+                                    <div class="right-list">18:29
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 138: Sản phẩm: CSS nhãn giảm giá
+                                        </span>
+                                    </div>
+                                    <div class="right-list">17:55
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 139: Hoàn thiện phần sản phẩms
+                                        </span>
+                                    </div>
+                                    <div class="right-list">16:50
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 140: Fix UI bugs - Phần 2s
+                                        </span>
+                                    </div>
+                                    <div class="right-list">35:10
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 141: Pagination UI
+                                        </span>
+                                    </div>
+                                    <div class="right-list">14:45
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 142: Dựng khung Footer
+                                        </span>
+                                    </div>
+                                    <div class="right-list">16:07
+                                    </div>
+                                </li>
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 143: Footer CSS
+                                        </span>
+                                    </div>
+                                    <div class="right-list">21:27
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 13: Tự bay với đôi cánh của bạn
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Bài 144: Giới thiệu chương</span>
+                                    </div>
+                                    <div class="right-list">02:53
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter-study">
+                            <div class="topic-chapter">
+                                Chương 14: Ứng tuyển xin việc làm
+                            </div>
+                            <ul class="all-list-chapter">
+                                <li class="list-study">
+                                    <div class="left-list">
+                                        <i class="fa-solid fa-file-lines"></i>
+                                        <span>Bài 145: Hướng dẫn ứng tuyển xin việc làm                                        </span>
+                                    </div>
+                                    <div class="right-list">13:00
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-tab-list" style="display: none;">
+                <div class="author_item">
+                    <div class="author_image">
+                        <img src="https://static.kt.city/e0ebee87-aefb-40bf-96a3-9a53986dfc17.jpg" alt="">
+                    </div>
+                    <div class="author_info">
+                        <div class="author_name">evondev</div>
+                        <div class="author_desc">
+                            Mình tên là Tuấn với nickname hay gọi là EvonDev. Mình là một Frontend Developer, ngoài ra mình còn viết blog và làm youtube nữa các bạn có thể tìm kiếm tên của mình trên google hay youtube với từ khoá là evondev. Mình thích chia sẻ kiến thức tới cộng đồng, giúp đỡ các bạn theo ngành này có thể học hỏi nâng cao trình độ hơn mỗi ngày. Hi vọng khoá học của mình sẽ giúp các bạn cải thiện được trình độ nhiều nhất có thể.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-tab-list" style="display:none">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item accordion-border">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            <div class="button-topic">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <span class="text-button-topic">Tôi có được hỗ trợ khi học không ?</span>
+                            </div>
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <span class="text-button">Khi học các bạn sẽ được hỗ trợ khi gặp vấn đề khó khăn từ a đến z</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item accordion-border">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <div class="button-topic">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <span class="text-button-topic">Khóa học này dành cho những ai?</span>
+                            </div>
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <span class="text-button">Khóa học thích hợp với người mới bắt đầu với lập trình và những người đã có kiến thức nhưng vẫn còn đang mơ hồ
+                            </span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item accordion-border">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <div class="button-topic">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <span class="text-button-topic">Học xong khoá này thì tôi có thể làm được gì ?</span>
+                            </div>
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <span class="text-button">Học xong khoá này ngoài việc có kiến thức vững chắc về HTML CSS mà các bạn có thể tự code được các giao diện web hiện nay như dàn layout, làm menu, các hiệu ứng loading, cách phân tích giao diện từ đầu, cách đặt tên chuẩn. Thậm chí tự tay tối ưu giao diện có sẵn của bạn như Wordpress chẳng hạn.
+                            </span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item accordion-border">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                <div class="button-topic">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    <span class="text-button-topic">Tôi muốn học cắt giao diện chỉn chu từ a-z thì nên học ở đâu ?</span>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body">
+                                <span class="text-button">Khoá học này chủ yếu dạy lại kiến thức vững chắc về HTML CSS tuy nhiên nếu các bạn muốn học cắt giao diện thì mình cũng có làm sau này ở KTcity luôn. Các bạn nhớ theo dõi mình nhé.
+                                </span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item accordion-border">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                            <div class="button-topic">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <span class="text-button-topic">Tôi muốn người dạy hỗ trợ 1-1 có được không ?</span>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                        <div class="accordion-body">
+                            <span class="text-button">Cái này thì không thể vì người học sẽ rất đông nên mình không hỗ trợ cho từng người được. Tuy nhiên mình sẽ cố gắng tranh thủ vào giúp đỡ các bạn khi có thể.
+                            </span>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="hGpxvE" id="pages">
+            <div class="page-container">
+                <div class="testimonial-item">
+                    <div class="testimonial-media">
+                        <img src="https://static.kt.city/ck9o9uxxhea2v0872gj93aa2s/89400834_641492820024626_8333700515317678080_o-1595912417624.jpg" alt="" class="testimonial-img">
+                        <img src="https://kt.city/static/img-rect-dots.png" alt="" class="testimonial-dots">
+                    </div>
+                    <p class="testimonial-desc">
+                        Khóa học cực chi tiết, videos học thì nhiều quá trời nhiều, các bạn mới bước chân vào lập trình web nhất định phải xem qua khóa này. Video ngắn dễ hiểu, dễ tiếp thu lắm nên mọi người hoàn toàn có thể tập trung vào nội dung mà ko bị chán. Học cực kỳ thích. À, anh Tuấn còn có trang web cực chất chuyên share những UI cực đẹp nữa
+                    </p>
+                    <h3 class="testimonial-author">Huỳnh Anh Bảo</h3>
+                    <span class="testimonial-position">Người dùng tại KTcity</span>
+                </div>
+            </div>
+            <div class="page-container">
+                <div class="testimonial-item">
+                    <div class="testimonial-media">
+                        <img src="https://static.kt.city/ckg8rvmh764c20872f6lxzh9t/long-1626940472916.jpg" alt="" class="testimonial-img">
+                        <img src="https://kt.city/static/img-rect-dots.png" alt="" class="testimonial-dots">
+                    </div>
+                    <p class="testimonial-desc">
+                        Cảm ơn anh vì đã tạo ra khóa học bổ ích này. Những gì học ở trường chỉ là những thứ cơ bản ít vận dụng được... Qua khóa học của anh thì e nhận được nhiều điều bổ ích hơn, nhiều kiến thức mới hay ho hơn và nhiều kinh nghiệm hơn để e có thể sử dụng để đạt hiệu quả hơn trong công việc và phát triển bản thân sau này...
+                    </p>
+                    <h3 class="testimonial-author">Đỗ Cao Long</h3>
+                    <span class="testimonial-position">Sinh viên</span>
+                </div>
+            </div>
+            <div class="page-container">
+                <div class="testimonial-item">
+                    <div class="testimonial-media">
+                        <img src="https://static.kt.city/ck3e4n4pz4h5q0872v3fivnpb/z2260393268480e95c98e0d8a574cd3df46ab72cbb6467-1609731556408.jpg" alt="" class="testimonial-img">
+                        <img src="https://kt.city/static/img-rect-dots.png" alt="" class="testimonial-dots">
+                    </div>
+                    <p class="testimonial-desc">
+                        Mình rất bị ấn tượng bởi cấu trúc bài học, rất chi tiết, và sắp xếp khoa học. Khóa học có đủ cả lý thuyết và thực hành ngay sau đó. Mình là một người chưa biết gì về HTML và CSS cũng có thể hiểu được một phần, tất nhiên cũng cần tìm hiểu thêm tài liệu ở bên ngoài. 5 sao ủng hộ anh tác giả và mong anh sẽ ra thêm nhiều khóa học về mảng này trong tương lai! Peace!!!
+                    </p>
+                    <h3 class="testimonial-author">Phạm Hoàng Đạt</h3>
+                    <span class="testimonial-position">Người dùng tại KTcity</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-landing">
+            <div class="page-container">
+                <div class="footer-container">
+                    <div class="footer-item">
+                        <div class="footer-header">
+                            <a href="#" class="footer-logo">
+                                <img src="https://kt.city/static/ktcity-logo.png" alt="">
+                            </a>
+                            
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-text">Nền tảng học online về kinh doanh, MMO, đầu tư, digital marketing chất lượng. Các khóa học được xây dựng bởi các cá nhân có chuyên môn cao.</p>
+                            <p class="footer-text">
+                                Hotline hỗ trợ: 02873098979  hoặc support@kt.city
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-header">
+                            Đối tác thanh toán
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-partners">
+                                <div class="footer-partner">
+                                    <div class="image">
+                                        <img src="https://kt.city/static/card-vnpay.png" alt="">
+                                    </div>
+                                    <span>VNpay</span>
+                                </div>
+                                <div class="footer-partner">
+                                        <div class="image">
+                                            <img src="https://kt.city/static/icon-momo.png" alt="">
+                                        </div>
+                                    <span>MoMo</span>
+                                </div>
+                                <div class="footer-partner">
+                                        <div class="image">
+                                            <img src="https://kt.city/static/card-visa-master.png" alt="">
+                                        </div>
+                                    <span>Visa/Mastercard</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-header">
+                            Học tập thuận tiện
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-benefit">
+                                Học online bất cứ lúc nào
+                            </div>
+                            <div class="footer-benefit">
+                                Cộng đồng hỗ trợ riêng
+                            </div>
+                            <div class="footer-benefit">
+                                Không giới hạn xem lại video
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-personal">
+                    <a href="https://deadwishmen.github.io/CVintroduce/" class="footer-avatar" target="blank">
+                        <img src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t1.6435-9/139508920_1295070137541856_8969568693095028532_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=95e1pZb74n8AX_gIcX4&tn=prIz_e161qf_hZj-&_nc_ht=scontent.fsgn5-15.fna&oh=00_AT8NohOGz_gRP7zKZlbP9XOOYhCvaNGr_PDxSpFzIX1RYg&oe=6258FF6A" alt="">
+                    </a>
+                    <a href="#" class="footer-avatar">
+                        <img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/270004108_2830538443904845_3850381837542454149_n.jpg?stp=c0.37.320.320a_dst-jpg_p320x320&_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_ohc=YGnJ65epdREAX9U9Z4f&tn=prIz_e161qf_hZj-&_nc_ht=scontent.fsgn5-9.fna&oh=00_AT_WHJKyn1iUjZeCFDMQMOXS02zTvvB7fOD30iZykKTtUA&oe=62378BE3" alt="">
+                    </a>
+                    <a href="#" class="footer-avatar">
+                        <img src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t39.30808-1/265861977_2648897695254180_8586906589053220006_n.jpg?stp=c53.0.320.320a_dst-jpg_p320x320&_nc_cat=102&ccb=1-5&_nc_sid=7206a8&_nc_ohc=hn0uRydcgWsAX8XHBSD&_nc_oc=AQn275zJcjaeG_CQaAfGEYoafGMTLYT6_wNvTesQI0Wx3ef6w0q3cHqjg_yIzyUpIv4&_nc_ht=scontent.fsgn5-4.fna&oh=00_AT9C26XaIHhusDHIU_aNitg3UCUIXt9nMSHeIHWZW_CmsQ&oe=62367551" alt="">
+                    </a>
+                    <a href="#" class="footer-avatar">
+                        <img src="https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.30808-1/265336799_3151353418523250_7719089796719936327_n.jpg?stp=dst-jpg_p320x320&_nc_cat=109&ccb=1-5&_nc_sid=7206a8&_nc_ohc=OeY8XjCgc3gAX-1lJ-l&_nc_ht=scontent.fsgn5-8.fna&oh=00_AT-GAY16DbBPqB8Cx98kBexen-I5vSLorCRMeX6fK7QMOA&oe=6236CF5B" alt="">
+                    </a>
+                    <a href="#" class="footer-avatar">
+                        <img src="https://chiase24.com/wp-content/uploads/2022/02/Tong-hop-hinh-anh-con-heo-dep-nhat-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="footer-caption">
+                    KTcity được tin tưởng bởi hơn 60.000 thành viên đang học tập
+                </div>
+            </div>
+        </div>
+       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
