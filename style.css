@@ -882,8 +882,8 @@ button{
     height: 40px;
 }
 .footer-logo img{
-    max-width: 110px;
-    max-height: 40px ;
+    max-width: 120px;
+    height: 40px ;
 }
 .footer-text{
     font-size: 1.3rem;
