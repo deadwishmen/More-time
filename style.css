@@ -924,7 +924,7 @@ button{
     font-weight: bold;
     max-width: 100rem;
     margin: 2.5rem auto 0px;
-    padding: 0.5rem 4.5rem;
+/*     padding: 0.5rem 4.5rem; */
     background-color: rgb(202, 233, 255);
     border-radius: 20px;
     text-align: center;
