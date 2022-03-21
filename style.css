@@ -961,6 +961,7 @@ button{
     object-fit: cover;
     margin: 3rem auto 4rem;
     position: relative;
+    content: none;
 }
 .author_item{
     display: flex;
